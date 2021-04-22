@@ -1,0 +1,140 @@
+@import "../modules/functions";
+@import "../modules/variables";
+@import "./animations";
+@import "./planets";
+
+// c we will start from here
+
+html {
+  background-color: #1d2731;
+}
+
+.main-wrapper {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+
+  .solar-system-opener {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .sso-1 {
+    }
+    .sso-2 {
+      .solar-system {
+        width: 100%;
+        height: 94vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .ring {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border: 1px solid #fafbfc;
+          border-radius: 50%;
+        }
+        .planet {
+          position: absolute;
+          top: -5px;
+          // width: 10px;
+          // height: 10px;
+          border-radius: 50%;
+          // background-color: #3ff9dc;
+        }
+        .pluto-ring {
+          width: 550px;
+          height: 550px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 50s linear 0s infinite;
+        }
+        .neptune-ring {
+          width: 500px;
+          height: 500px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 40s linear 0s infinite;
+        }
+        .uranus-ring {
+          width: 410px;
+          height: 410px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 38s linear 0s infinite;
+        }
+
+        .saturn-ring {
+          width: 350px;
+          height: 350px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 35s linear 0s infinite;
+        }
+        .jupiter-ring {
+          width: 300px;
+          height: 300px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 25s linear 0s infinite;
+        }
+        .mars-ring {
+          width: 250px;
+          height: 250px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 14s linear 0s infinite;
+        }
+
+        .earth-ring {
+          width: 200px;
+          height: 200px;
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -webkit-animation: spin 12s linear 0s infinite;
+        }
+
+        .venus-ring {
+          width: 165px;
+          height: 165px;
+          -webkit-animation: spin 10s linear 0s infinite;
+        }
+        .mercury-ring {
+          width: 105px;
+          height: 105px;
+          -webkit-animation: spin 8s linear 0s infinite;
+        }
+        .sun {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

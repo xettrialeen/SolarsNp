@@ -1,0 +1,156 @@
+@mixin planets($animation) {
+  overflow: hidden;
+  animation-name: rotate;
+  animation-duration: $animation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.mercury {
+  background-color: #cccccc;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.venus {
+  height: 13px;
+  width: 13px;
+  top: -8px !important;
+  overflow: hidden;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.earth {
+  width: 15px;
+  height: 15px;
+  top: -8px !important;
+
+  overflow: hidden;
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.mars {
+  width: 15px;
+  height: 15px;
+  top: -8px !important;
+
+  @include planets("12s");
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.jupiter {
+  width: 30px;
+  height: 30px;
+  top: -18px !important;
+
+  @include planets("18s");
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.saturn {
+  width: 30px;
+  height: 30px;
+  top: -18px !important;
+
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.uranus {
+  width: 14px;
+  height: 14px;
+  top: -5px !important;
+
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.neptune {
+  width: 17px;
+  height: 17px;
+  top: -10px !important;
+
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.pluto {
+  width: 10px;
+  height: 10px;
+  top: -5px !important;
+
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.sun {
+  overflow: hidden;
+  background-color: transparent;
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
