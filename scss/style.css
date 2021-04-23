@@ -265,20 +265,111 @@
   height: 100%;
 }
 
+.sso-1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 100;
+  margin-top: -15px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sso-1 .sso1-btn {
+  width: 280px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sso-1 .sso1-btn:hover .btn-img {
+  width: 120px;
+}
+.sso-1 .sso1-btn:hover span {
+  margin-right: 80px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.sso-1 .sso1-btn .btn-img {
+  position: absolute;
+  top: -30px;
+  width: 80px;
+  right: 0px;
+  z-index: 0;
+  transition: width 0.2s linear;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  -ms-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+}
+.sso-1 .sso1-btn .btn-img img {
+  height: 100%;
+  width: 100%;
+}
+.sso-1 .sso1-btn button {
+  cursor: pointer;
+  background-color: #24292e;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #dee7ee;
+}
+.sso-1 .sso1-btn button span {
+  transition: margin-right 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -webkit-transition: margin-right 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -moz-transition: margin-right 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -ms-transition: margin-right 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -o-transition: margin-right 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 html {
   background-color: #1d2731;
 }
 
-.main-wrapper {
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
-}
 .main-wrapper .solar-system-opener {
   display: flex;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.main-wrapper .solar-system-opener::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background: rgba(14, 13, 13, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.main-wrapper .solar-system-opener .sso-2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system {
   width: 100%;
@@ -310,6 +401,7 @@ html {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -webkit-animation: spin 50s linear 0s infinite;
+  animation: spin 50s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .neptune-ring {
   width: 500px;
@@ -320,6 +412,7 @@ html {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -webkit-animation: spin 40s linear 0s infinite;
+  animation: spin 40s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .uranus-ring {
   width: 410px;
@@ -330,6 +423,7 @@ html {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -webkit-animation: spin 38s linear 0s infinite;
+  animation: spin 38s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .saturn-ring {
   width: 350px;
@@ -339,6 +433,7 @@ html {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  animation: spin 35s linear 0s infinite;
   -webkit-animation: spin 35s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .jupiter-ring {
@@ -349,6 +444,7 @@ html {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  animation: spin 25s linear 0s infinite;
   -webkit-animation: spin 25s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .mars-ring {
@@ -359,6 +455,7 @@ html {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  animation: spin 14s linear 0s infinite;
   -webkit-animation: spin 14s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .earth-ring {
@@ -369,16 +466,19 @@ html {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
+  animation: spin 12s linear 0s infinite;
   -webkit-animation: spin 12s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .venus-ring {
   width: 165px;
   height: 165px;
+  animation: spin 10s linear 0s infinite;
   -webkit-animation: spin 10s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .mercury-ring {
   width: 105px;
   height: 105px;
+  animation: spin 8s linear 0s infinite;
   -webkit-animation: spin 8s linear 0s infinite;
 }
 .main-wrapper .solar-system-opener .sso-2 .solar-system .sun {

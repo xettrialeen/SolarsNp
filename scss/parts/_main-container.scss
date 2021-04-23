@@ -2,6 +2,7 @@
 @import "../modules/variables";
 @import "./animations";
 @import "./planets";
+@import "./sso1";
 
 // c we will start from here
 
@@ -10,18 +11,33 @@ html {
 }
 
 .main-wrapper {
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
+  // padding: 20px;
+  // width: 100%;
+  // height: 100vh;
 
   .solar-system-opener {
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    .sso-1 {
+    width: 100%;
+    height: 100vh;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100vh;
+      background: rgba(14, 13, 13, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
+
     .sso-2 {
+      -webkit-user-select: none;
+      user-select: none;
       .solar-system {
         width: 100%;
         height: 94vh;
@@ -55,6 +71,7 @@ html {
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
           -webkit-animation: spin 50s linear 0s infinite;
+          animation: spin 50s linear 0s infinite;
         }
         .neptune-ring {
           width: 500px;
@@ -65,6 +82,7 @@ html {
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
           -webkit-animation: spin 40s linear 0s infinite;
+          animation: spin 40s linear 0s infinite;
         }
         .uranus-ring {
           width: 410px;
@@ -75,6 +93,7 @@ html {
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
           -webkit-animation: spin 38s linear 0s infinite;
+          animation: spin 38s linear 0s infinite;
         }
 
         .saturn-ring {
@@ -85,6 +104,7 @@ html {
           -moz-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
+          animation: spin 35s linear 0s infinite;
           -webkit-animation: spin 35s linear 0s infinite;
         }
         .jupiter-ring {
@@ -95,6 +115,7 @@ html {
           -moz-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
+          animation: spin 25s linear 0s infinite;
           -webkit-animation: spin 25s linear 0s infinite;
         }
         .mars-ring {
@@ -105,6 +126,7 @@ html {
           -moz-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
+          animation: spin 14s linear 0s infinite;
           -webkit-animation: spin 14s linear 0s infinite;
         }
 
@@ -116,17 +138,20 @@ html {
           -moz-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
+          animation: spin 12s linear 0s infinite;
           -webkit-animation: spin 12s linear 0s infinite;
         }
 
         .venus-ring {
           width: 165px;
           height: 165px;
+          animation: spin 10s linear 0s infinite;
           -webkit-animation: spin 10s linear 0s infinite;
         }
         .mercury-ring {
           width: 105px;
           height: 105px;
+          animation: spin 8s linear 0s infinite;
           -webkit-animation: spin 8s linear 0s infinite;
         }
         .sun {

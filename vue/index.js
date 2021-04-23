@@ -2,6 +2,11 @@ const solar = new Vue({
   el: "#solar",
   data: {
     message: "hello world",
+    imagebtnanime: true,
   },
-  methods: {},
+  methods: {
+    animebtn() {
+      this.imagebtnanime = !this.imagebtnanime;
+    },
+  },
 });
