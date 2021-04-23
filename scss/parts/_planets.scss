@@ -51,6 +51,8 @@
     height: 100%;
     width: 100%;
   }
+  transform: scale(1);
+  animation: pulse 2s infinite;
 }
 .mars {
   width: 15px;
