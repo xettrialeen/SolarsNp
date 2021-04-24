@@ -296,6 +296,10 @@
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sso-1 {
   position: absolute;
   left: 50%;

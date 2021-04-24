@@ -1,0 +1,127 @@
+html {
+  background-color: #1d2731;
+  font-family: "DM Mono", monospace;
+  color: #ffffff;
+}
+
+#solarplanets .main-wrapper .Solarcard-lists::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  /* width of the entire scrollbar */
+}
+#solarplanets .main-wrapper .Solarcard-lists::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+#solarplanets .main-wrapper .Solarcard-lists::-webkit-scrollbar-thumb {
+  background-color: #1d2731;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
+#solarplanets .main-wrapper .Solarcard-lists {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 410px;
+  width: 350px;
+  min-width: 250px;
+  padding: 1.5rem;
+  cursor: pointer;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  background-color: #1d2731;
+  box-shadow: -1rem 0 3rem black;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card:hover {
+  transform: translateY(-1rem);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+}
+#solarplanets .main-wrapper .Solarcard-lists .card:hover h2 {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card:hover ~ .card {
+  transform: translateX(130px);
+  -webkit-transform: translateX(130px);
+  -moz-transform: translateX(130px);
+  -ms-transform: translateX(130px);
+  -o-transform: translateX(130px);
+}
+#solarplanets .main-wrapper .Solarcard-lists .card:not(:first-child) {
+  margin-left: -130px;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .main-image {
+  display: flex;
+  justify-content: center;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .main-image .planetimage {
+  position: relative;
+  top: 20px;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .main-image .planetimage img {
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .card-moon {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 0.5rem 0 0;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .card-moon .moon-avatar img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  margin: 16px 9px;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .card-moon .half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 68px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+#solarplanets .main-wrapper .Solarcard-lists .card .card-moon .moons-name .moon-name-prefix {
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}/*# sourceMappingURL=solarplanets.css.map */

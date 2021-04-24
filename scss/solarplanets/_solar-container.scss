@@ -1,0 +1,143 @@
+@import "../modules/functions";
+@import "../modules/variables";
+
+html {
+  background-color: $background-color;
+  font-family: "DM Mono", monospace;
+  color: #ffffff;
+}
+
+#solarplanets {
+  .main-wrapper {
+    .Solarcard-lists::-webkit-scrollbar {
+      width: 10px;
+      height: 10px; /* width of the entire scrollbar */
+    }
+
+    .Solarcard-lists::-webkit-scrollbar-track {
+      background: transparent;
+
+      /* color of the tracking area */
+    }
+
+    .Solarcard-lists::-webkit-scrollbar-thumb {
+      background-color: #1d2731;
+      border-radius: 20px;
+
+      box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+        inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+    }
+    .Solarcard-lists {
+      display: flex;
+      padding: 3rem;
+      overflow-x: scroll;
+
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 410px;
+        width: 350px;
+        min-width: 250px;
+        padding: 1.5rem;
+        cursor: pointer;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        background-color: #1d2731;
+        box-shadow: -1rem 0 3rem rgb(0, 0, 0);
+        transition: 0.2s ease-in-out;
+
+        -webkit-transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -ms-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        &:hover {
+          transform: translateY(-1rem);
+          -webkit-transform: translateY(-1rem);
+          -moz-transform: translateY(-1rem);
+          -ms-transform: translateY(-1rem);
+          -o-transform: translateY(-1rem);
+
+          @if hover {
+            h2 {
+              background: linear-gradient(90deg, #ff8a00, #e52e71);
+              text-shadow: none;
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+            }
+          }
+        }
+        &:hover ~ .card {
+          transform: translateX(130px);
+          -webkit-transform: translateX(130px);
+          -moz-transform: translateX(130px);
+          -ms-transform: translateX(130px);
+          -o-transform: translateX(130px);
+        }
+        &:not(:first-child) {
+          margin-left: -130px;
+        }
+
+        .main-image {
+          display: flex;
+          justify-content: center;
+          .planetimage {
+            position: relative;
+            top: 20px;
+            img {
+              display: block;
+              height: 200px;
+              width: 200px;
+            }
+          }
+        }
+
+        .card-moon {
+          position: relative;
+          display: grid;
+          grid-template-columns: 75px 1fr;
+          align-items: center;
+          margin: 0.5rem 0 0;
+
+          .moon-avatar {
+            img {
+              display: block;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              overflow: hidden;
+              margin: 16px 9px;
+            }
+          }
+          .half-circle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 68px;
+            height: 48px;
+            fill: none;
+            stroke: #ff8a00;
+            stroke-width: 8;
+            stroke-linecap: round;
+            pointer-events: none;
+          }
+          .moons-name {
+            .moon-name-prefix {
+              font-style: normal;
+              font-weight: 700;
+              color: #7a7a8c;
+            }
+          }
+        }
+      }
+    }
+  }
+}
