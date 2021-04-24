@@ -1,0 +1,20 @@
+@import "../modules/functions";
+@import "../modules/variables";
+
+.planet-details {
+  .planet-wrapper {
+    .planetListArticle {
+      display: flex;
+      flex-direction: column;
+
+      .planetimage {
+        width: 20%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
