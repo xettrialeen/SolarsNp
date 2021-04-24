@@ -152,6 +152,11 @@ body::-webkit-scrollbar-thumb {
 .planet-details .planet-wrapper .planetimage .pi-wrapper {
   width: 35%;
 }
+@media screen and (max-width: 484px) {
+  .planet-details .planet-wrapper .planetimage .pi-wrapper {
+    width: 250px;
+  }
+}
 .planet-details .planet-wrapper .planetimage .pi-wrapper img {
   width: 100%;
   height: 100%;

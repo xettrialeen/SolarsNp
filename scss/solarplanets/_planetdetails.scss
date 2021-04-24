@@ -35,6 +35,9 @@ body::-webkit-scrollbar-thumb {
       // -webkit-filter: blur(2px);
       .pi-wrapper {
         width: 35%;
+        @include mq("max", "484px") {
+          width: 250px;
+        }
 
         img {
           width: 100%;
