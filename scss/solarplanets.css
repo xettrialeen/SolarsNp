@@ -119,18 +119,100 @@ html {
   color: #7a7a8c;
 }
 
-.planet-details .planet-wrapper .planetListArticle {
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1d2731;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.planet-details {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.planet-details .planet-wrapper .planetimage {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
-.planet-details .planet-wrapper .planetListArticle .planetimage {
-  width: 20%;
+.planet-details .planet-wrapper .planetimage .pi-wrapper {
+  width: 35%;
 }
-.planet-details .planet-wrapper .planetListArticle .planetimage img {
+.planet-details .planet-wrapper .planetimage .pi-wrapper img {
   width: 100%;
   height: 100%;
 }
-
+.planet-details .planet-wrapper .planetListArticle {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2731;
+}
+@media screen and (max-width: 484px) {
+  .planet-details .planet-wrapper .planetListArticle {
+    padding: 30px;
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .planet-details .planet-wrapper .planetListArticle {
+    padding: 30px;
+    margin-top: 130px;
+  }
+}
+.planet-details .planet-wrapper .planetListArticle h2 {
+  font-size: 4em;
+  text-align: center;
+}
+@media screen and (max-width: 724px) {
+  .planet-details .planet-wrapper .planetListArticle h2 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 484px) {
+  .planet-details .planet-wrapper .planetListArticle h2 {
+    text-align: left;
+    font-size: 2em;
+  }
+}
+.planet-details .planet-wrapper .planetListArticle p {
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 10px;
+  font-size: 1.2em;
+  padding: 50px;
+  font-weight: 400;
+}
+@media screen and (max-width: 724px) {
+  .planet-details .planet-wrapper .planetListArticle p {
+    font-size: 1em;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 484px) {
+  .planet-details .planet-wrapper .planetListArticle p {
+    padding: 0px;
+    font-weight: 200;
+  }
+}
+.planet-details .planet-wrapper .planetListArticle .dropCaps {
+  font-size: 5em;
+  color: #73558f;
+}
+@media screen and (max-width: 724px) {
+  .planet-details .planet-wrapper .planetListArticle .dropCaps {
+    font-size: 3em;
+  }
+}
 * {
   margin: 0;
   padding: 0;

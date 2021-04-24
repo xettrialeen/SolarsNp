@@ -1,19 +1,93 @@
 @import "../modules/functions";
 @import "../modules/variables";
 
-.planet-details {
-  .planet-wrapper {
-    .planetListArticle {
-      display: flex;
-      flex-direction: column;
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; /* width of the entire scrollbar */
+}
 
-      .planetimage {
-        width: 20%;
+body::-webkit-scrollbar-track {
+  background: transparent;
+
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1d2731;
+  border-radius: 20px;
+
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.planet-details {
+  overflow: hidden;
+  margin-top: 50px;
+  .planet-wrapper {
+    .planetimage {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      // filter: blur(2px);
+      // -webkit-filter: blur(2px);
+      .pi-wrapper {
+        width: 35%;
 
         img {
           width: 100%;
           height: 100%;
         }
+      }
+    }
+    .planetListArticle {
+      padding: 50px;
+
+      @include mq("max", "484px") {
+        padding: 30px;
+        margin-top: 120px;
+      }
+      @include mq("max", "375px") {
+        padding: 30px;
+        margin-top: 130px;
+      }
+      // this is article
+      display: flex;
+      flex-direction: column;
+      background-color: #1d2731;
+      h2 {
+        font-size: 4em;
+        text-align: center;
+        @include mq("max", "724px") {
+          font-size: 3em;
+        }
+        @include mq("max", "484px") {
+          text-align: left;
+          font-size: 2em;
+        }
+      }
+      p {
+        font-family: $bold-fonts;
+        margin-top: 10px;
+        font-size: 1.2em;
+        padding: 50px;
+        font-weight: 400;
+        @include mq("max", "724px") {
+          font-size: 1em;
+          padding: 20px;
+        }
+        @include mq("max", "484px") {
+          padding: 0px;
+          font-weight: 200;
+        }
+      }
+      .dropCaps {
+        font-size: 5em;
+        color: #73558f;
+        @include mq("max", "724px") {
+          font-size: 3em;
+        }
+      }
+      h3 {
       }
     }
   }
