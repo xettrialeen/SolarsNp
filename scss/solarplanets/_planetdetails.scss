@@ -61,11 +61,11 @@ body::-webkit-scrollbar-thumb {
 
       @include mq("max", "484px") {
         padding: 30px;
-        margin-top: 120px;
+        // margin-top: 120px;
       }
       @include mq("max", "375px") {
         padding: 30px;
-        margin-top: 130px;
+        // margin-top: 130px;
       }
       // this is article
       display: flex;

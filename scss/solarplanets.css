@@ -184,13 +184,11 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 484px) {
   .planet-details .planet-wrapper .planetListArticle {
     padding: 30px;
-    margin-top: 120px;
   }
 }
 @media screen and (max-width: 375px) {
   .planet-details .planet-wrapper .planetListArticle {
     padding: 30px;
-    margin-top: 130px;
   }
 }
 .planet-details .planet-wrapper .planetListArticle h2 {
