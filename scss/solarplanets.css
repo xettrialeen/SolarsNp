@@ -125,6 +125,10 @@ body::-webkit-scrollbar {
   /* width of the entire scrollbar */
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar-track {
   background: transparent;
   /* color of the tracking area */
