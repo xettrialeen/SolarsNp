@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
       h2 {
         font-size: 4em;
         text-align: center;
+        color: $secondary-color;
         @include mq("max", "724px") {
           font-size: 3em;
         }
@@ -66,6 +67,7 @@ body::-webkit-scrollbar-thumb {
         }
       }
       p {
+        color: $primary-color;
         font-family: $bold-fonts;
         margin-top: 10px;
         font-size: 1.2em;

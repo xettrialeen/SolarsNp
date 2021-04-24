@@ -173,6 +173,7 @@ body::-webkit-scrollbar-thumb {
 .planet-details .planet-wrapper .planetListArticle h2 {
   font-size: 4em;
   text-align: center;
+  color: #eff2f7;
 }
 @media screen and (max-width: 724px) {
   .planet-details .planet-wrapper .planetListArticle h2 {
@@ -186,6 +187,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .planet-details .planet-wrapper .planetListArticle p {
+  color: #dee7ee;
   font-family: "Lexend Deca", sans-serif;
   margin-top: 10px;
   font-size: 1.2em;
